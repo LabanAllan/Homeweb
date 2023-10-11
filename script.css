@@ -1,0 +1,30 @@
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Get user input
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const message = document.getElementById('message').value;
+
+    // TODO: Send this data to the server using AJAX or fetch API
+
+    // Example using fetch API
+    fetch('/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, phone, message }),
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Handle response from the server
+        console.log(data);
+        alert('Form submitted successfully!');
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Form submission failed!');
+    });
+});
