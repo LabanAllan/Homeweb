@@ -25,11 +25,10 @@ body {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-    float: inline-start;
-    text-decoration: wavy;
-    display:  block;
+    text-decoration: none;
     font-size: larger;
-    flex-direction: column-reverse;
+    text-indent: centre;
+    justify-content: space-around;
 }
 
 .container {
@@ -37,31 +36,74 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: last baseline;
+    text-align: center;
+    color: azure;
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     align-content: space-between;
-    text-indent: 0ch;
+    text-indent: 4cm;
+    justify-content: space-between;
 }
 
 .nav-links li {
     margin: 0 15px;
+    justify-content: space-between;
 }
 
 .nav-links a {
     text-decoration: none;
     color: #fff;
     transition: color 0.3s ease;
+    justify-content: space-between;
 }
 
 .nav-links a:hover {
     color: #ffcc00;
+}
+.search-container {
+    display: flex;
+    margin: 20px;
+}
+
+.search-bar {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 70%;
+    outline: none;
+}
+
+.search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+.Mission{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+
+}
+.home{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
