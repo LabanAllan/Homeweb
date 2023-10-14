@@ -9,31 +9,47 @@
 <body>
     <nav class="navbar">
         <div class="container">
-            <div class="logo"><h4>SWEET HOMES</h4></div>
-            <class="nav-links"><centre>
-                <a href="#Buy">Buy</a>
-                <a href="#Sell">Sell</a>
-                <a href="#Rent">Rent</a>
-                <a href="#Mortgage">Mortgage</a>
-                <a href="#agent">Find agent</a> 
+            <div class="logo">
+            <div class="logo-image">
+                <img src="./images/LOGIM.png">
+                <style>
+                    .logo-images{
+                        height: 10vh;
+                        width: 10px;
+                        padding-top: 0%;
+                    }
+                </style>
+            </div>
+            <h4>SWEET HOMES</h4>
+        </div>
+            <div class="nav-links" id="nav-links">
+                <a href="Buy.html">Buy</a>
+                <a href="sell.html">Sell</a>
+                <a href="rent.html">Rent</a>
+                <a href="Mortgage.html">Mortgage</a>
+                <a href="agent.html"> Find agent</a> 
 
-        </centre>
+        </div>
         </div>
     </nav>
-      <div class="homes">
-    <h1><centre> Discover your perfect rental<sup>®</sup></centre></h1>
-    <p>Search nearby apartments, condos, and homes for rent;</p>
-      </div>
+      <div class="container">
+        <img src="./images/backpic.jpeg" alt=" new home for you">
+        <div class="text">
+            <h1><center>Discover your perfect rental<sup>®</sup></center></h1>
+    <p><i><center>Nearby apartments, condos, and homes for rent;</center></i> </p>
+            <!-- Add your text here -->
+        </div>
+    </div>
       <div class="search-container">
         <input type="text" class="search-bar" placeholder="which area do you prefer living..... ">
         <input type="number" class="search-bar" placeholder="area code....... ">
         <button class="search-button"><i>search</i></button>
     </div>
                     <div class="header">
-                    <h2><center>House Buying Website</center></h2>
+                    <h2><center>SWEET HOME House Buying Website</center></h2>
                     </div>
-      <div class="image">
-        <img src="images/apart.jpeg" height=”50px” width=”auto”>
+      <div class="image" id="image">
+        <img src="images/apart.jpeg" height=”50px” width=”50”>
         <img src="images/bnb room1.jpeg" height=”50px” width=”auto”>
         <img src="images/bnb room.jpeg" height=”50px” width=”auto”>
         <img src="images/route.jpeg" height=”50px” width=”auto”>
@@ -52,6 +68,57 @@
                Casteel Auction and Real Estate Inc. <br>
                staff are ready to visit with you on all your Auction & Real Estate questions.</p>
             </div>
+            <!DOCTYPE html>
+    <h2><center>Testimonials &amp; our Rates </center> <u></u></h2>
+    <style>
+        .testimonial {
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .name {
+            font-weight: bold;
+        }
+
+        .rating {
+            color: gold;
+        }
+    </style>
+
+<body>
+    <div class="testimonial">
+        <img src="./images/Sarah and John.jpeg" alt="Sarah and John">
+        <div class="name">Sarah and John </div>
+        <p>"We had an incredible experience working with HOME SWEET.<br> From the very beginning, their team was attentive, professional, and knowledgeable.<br> They guided us through the entire home buying process, ensuring that we found the perfect home for our family.<br>
+             We are extremely satisfied with their service and would <br>
+             highly recommend them to anyone looking to buy a home."</p>
+             <span class="rating">★★★★★</span>
+    </div>
+
+    <div class="testimonial">
+        <img src="./images/Michael.jpeg" alt="Michael">
+        <div class="name">Michael </div>
+        <p>"I can't thank HOME SWEET enough for helping me find my dream home.<br>
+             Their agents are experts in the local market and understood exactly what I was looking for.<br>
+              They were patient, responsive, and dedicated to making the process as smooth as possible.<br>
+              Thanks to their expertise, I am now a proud homeowner.<br>
+               I highly rate their services and am grateful for their support."</p>
+               <span class="rating">★★★★★</span>
+    </div>
+
+    <div class="testimonial">
+        <img src="./images/Emily and David.jpeg" alt="Emily and David">
+        <div class="name">Emily and David </div>
+        <p>"We were first-time homebuyers and were initially overwhelmed by the process.<br>
+             HOME SWEET made everything simple and stress-free. <br>
+             Their team provided us with valuable insights, answered all our questions,<br>
+              and helped us secure a fantastic deal on our new home. We are immensely happy with <br>
+            our purchase, and it wouldn't have been possible without the assistance of HOME SWEET.<br>
+             We give them a five-star rating!"</p>
+             <span class="rating">★★★★★</span>
+    </div>
+
         <h2><i>Do your booking here.......</i></h2>
         
         <form id="contactForm">
@@ -66,6 +133,7 @@
             <button type="submit">Submit</button>
         </form>
     </div>
+        
     <script src="script.js"></script>
 </body>
 </html>
